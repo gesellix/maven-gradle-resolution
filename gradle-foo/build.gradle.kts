@@ -1,6 +1,5 @@
 plugins {
     `java-library`
-    groovy
 }
 
 repositories {
@@ -8,8 +7,5 @@ repositories {
 }
 
 dependencies {
-    implementation("org.apache.cxf:cxf-rt-ws-security:3.2.11")
-    testImplementation("org.codehaus.groovy:groovy-all:2.5.11")
-    testImplementation("org.spockframework:spock-core:1.3-groovy-2.5")
-    testImplementation("junit:junit:4.13")
+    implementation("org.apache.wss4j:wss4j-ws-security-common:2.2.4")
 }
