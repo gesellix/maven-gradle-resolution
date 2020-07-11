@@ -14,3 +14,6 @@ contains a dependency on `"org.opensaml:opensaml-saml-impl:3.3.0"`, having exclu
 
 Maven does consider those exclusions, so that they won't appear in the compile classpath.
 Gradle seems to ignore those exclusions, so they actually do appear in the compile classpath.
+
+An issue regarding the different dependency resolution mechanisms shows that Maven and Gradle
+do in fact have different semantics: [gradle/issues/1473](https://github.com/gradle/gradle/issues/1473).
